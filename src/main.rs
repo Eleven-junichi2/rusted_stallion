@@ -20,7 +20,7 @@ enum RaceStrategyAptitude {
 
 enum Sex {
     Male,
-    Female
+    Female,
 }
 enum HorceStatus {
     Speed(u8),
@@ -30,8 +30,15 @@ enum HorceStatus {
     Health(u8),
     Temperament(u8),
     Weight(u16),
-    Sex(Sex)
+    Sex(Sex),
 }
+// For Japanese:
+// Speed:追走力
+// Sprint:瞬発力
+// Stamina:持久力
+// Guts:勝負根性
+// Health:回復力
+// Temperament:気性
 
 struct Pedigree;
 
@@ -42,6 +49,7 @@ struct Horse {
     status: HorceStatus,
 }
 
-fn main() {
-    println!("Hello, world!");
-}
+fn main() {}
+
+#[cfg(test)]
+mod tests {}
